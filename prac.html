@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 100px;
+            border:1px solid #ccc;
+            margin:100px auto;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+        <input type="text">
+    <select id="chose">
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+    </select>
+        <input type="text">
+    <input type="button" value="按钮">
+    <div id="result">
+
+    </div>
+</div>
+</body>
+</html>
+<script src=seajs/sea.js></script>
+<script>
+    seajs.use('./praMain.js',function(con){
+        con.show();
+    })
+</script>
